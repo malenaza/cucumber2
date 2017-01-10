@@ -33,7 +33,7 @@ public class Pasos {
 	@Then("^I should see the number results page$")
 	public void i_should_see_cucumber_results_page() throws Throwable {
 		//Assert.assertEquals("Incorrect page title", "Total: encontrados 4 resultados", driver.);
-		Assert.assertEquals("Total: encontrados 4 resultados.", driver.findElement(By.cssSelector("strong")).getText());
+		Assert.assertEquals("Total: encontrados 5 resultados.", driver.findElement(By.cssSelector("strong")).getText());
 		driver.quit();
 	}
 
