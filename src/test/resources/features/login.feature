@@ -1,5 +1,5 @@
 Feature: Search in casasantasusana website
-I want go to santasusanastudenthouseinlima and search for Cucumber
+I want go to santasusanastudenthouseinlima and search for estudiantes
  
 Scenario: Navigate to santasusanastudenthouseinlima website and perform search
 Given I have browser window open
