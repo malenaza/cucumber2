@@ -16,7 +16,7 @@ public class Pasos {
 	 
 	@Given("^I have browser window open$")
 	public void i_have_browser_window_open() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
 		driver = new ChromeDriver();
 	}
  
