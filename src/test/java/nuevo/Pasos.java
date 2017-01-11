@@ -23,7 +23,7 @@ public class Pasos {
  
 	@When("^I Navigate to santasusanastudenthouseinlima$")
 	public void i_Navigate_to_santasusanastudenthouseinlima() throws Throwable {
-		driver.get("http://localhost:9090");
+		driver.get("http://www.santasusanastudenthouseinlima.com");
 	}
  
 	@When("^search for estudiantes$")
