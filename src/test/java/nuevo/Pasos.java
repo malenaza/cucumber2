@@ -18,6 +18,7 @@ public class Pasos {
 	public void i_have_browser_window_open() throws Throwable {
 		//System.setProperty("webdriver.chrome.driver", "D://chromedriver.exe");
 		driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
  
 	@When("^I Navigate to santasusanastudenthouseinlima$")
@@ -28,6 +29,8 @@ public class Pasos {
 	@When("^search for estudiantes$")
 	public void search_for_cucumber() throws Throwable {
 		driver.findElement(By.name("searchword")).sendKeys("estudiantes" + Keys.ENTER);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.titleContains("Buscar"));
 	}
  
 	@Then("^I should see the number results page$")
