@@ -1,0 +1,10 @@
+In the UI part I used selenium and pagefactory design pattern due to the helpful use of annotations to find elements.
+I defined the most valuable tests cases in login.feature, a happy path and 2 error cases because I thought they 
+would be the most common ones. 
+I automated all 3 because since I automated one error case, implementing the other error case was straight forward.
+
+In the API part I used the jackson library for JSON to simplify the serialization/deserialization of objects. I only
+implemented one test case for happy path but other error test cases can also be implemented. Also I used the chromedriver
+but other drivers for browsers can be used.
+
+In both of them I used cucumber for feature definition and maven to handle dependencies easily.
