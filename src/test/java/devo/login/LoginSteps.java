@@ -1,18 +1,20 @@
-package devo;
+package devo.login;
 
-import cucumber.api.java.en.And;
-import devo.pageObjects.LoginPage;
-import devo.pageObjects.SecureAreaPage;
+import java.util.Map;
+
 import org.junit.Assert;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import java.util.Map;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import devo.login.pageObjects.LoginPage;
+import devo.login.pageObjects.SecureAreaPage;
 
 public class LoginSteps {
 
